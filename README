@@ -1,0 +1,27 @@
+This program generates text based on Shannon's algorithm, analyzing the probabilities
+of character sequences in a given input file. It processes the input at various levels
+(1 through k) to calculate distributions of characters following sequences of length k.
+The program can generate random text based on these distributions and optionally output
+a JSON map of the level-k probabilities using the -m flag. Designed with modularity in
+mind, it uses STL containers for efficient data handling and ensures robustness against
+edge cases like unmatched sequences.
+
+
+
+I created three different functions, buildMap, printJSON, and generateText. 
+They split up the code into three funcitons so that it is more modualized and
+easier to read and test.
+
+In main I error check the inputs to make sure that they are satisfactory, I then
+either call buildMap and printJSON if -m is inputed or I cycle through each value up
+to k and print them using buildmap and generate text for each k value.
+
+The buildmap function is used to populate the map of the snippets and the next cahracters
+
+The printJSON function is used to print out that map that was formed in the JSON format
+
+The generateText funciton is used to print out the randomly generated string of words
+given the probablity from the map that was made.
+
+The main file is structured to error check the arguments and then either generate the 
+JSON format or the randomly chosen characters.
