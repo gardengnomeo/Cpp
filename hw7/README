@@ -1,0 +1,8 @@
+This project involves designing an ordered tree data structure in two parts: a character-based
+tree (CTree) and a templated tree (Tree). The tree uses a left-child right-sibling representation
+to store nodes, ensuring that sibling nodes are ordered and contain unique data. Key features
+include recursive implementations for adding nodes, traversals, deep copying, and equality checking,
+with extensive use of overloaded operators for functionality. The Tree class generalizes CTree by
+supporting any data type, leveraging C++ templates while maintaining strict memory management and
+ordering constraints. Testing, modular design, and adherence to modern C++ practices such as RAII
+and dynamic memory management are emphasized throughout.
